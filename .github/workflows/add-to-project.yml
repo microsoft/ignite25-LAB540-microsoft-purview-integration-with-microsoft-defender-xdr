@@ -1,0 +1,34 @@
+# This workflow automatically adds new issues to the Ignite GitHub Project
+# and applies appropriate labels for organization and triage.
+
+name: Add to Project
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+    steps:
+      - name: Add issue to Ignite project
+        uses: actions/add-to-project@v0.6.0
+        with:
+          # Replace with the actual Ignite GitHub Project URL
+          project-url: https://github.com/orgs/microsoft/projects/YOUR_PROJECT_NUMBER
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+
+  label_issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+    steps:
+      - name: Apply labels to new issues
+        uses: andymckay/labeler@e6c4322d0397f3240f0e7e30a33b5c5df2d39e90
+        with:
+          add-labels: "ignite, triage, needs-review"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
