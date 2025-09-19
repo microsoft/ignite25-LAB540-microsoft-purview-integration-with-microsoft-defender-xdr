@@ -1,0 +1,35 @@
+name: "Add new issues to Ignite GH Project"
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+  issues: write
+  projects: write
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add issue to project
+        uses: actions/add-to-project@v0.5.0
+        with:
+          project-url: ${{ secrets.GH_PROJECT_URL }}
+          github-token: ${{ secrets.ADD_TO_PROJECT }}
+
+  label_issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add labels to issue
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          REPO: ${{ github.repository }}
+          LABEL: ${{ secrets.ISSUE_LABEL }}
+        run: |
+          if [ -n "$LABEL" ]; then
+            gh issue edit "$ISSUE_NUMBER" --repo "$REPO" --add-label "$LABEL"
+          fi
