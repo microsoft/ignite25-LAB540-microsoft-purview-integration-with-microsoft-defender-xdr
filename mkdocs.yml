@@ -19,11 +19,11 @@
 
 
 # Project information .........................................
-site_name: "Session Title"
-site_url: 
-site_author: Content Creator
+site_name: "Lab540: Microsoft Purview Integration with Microsoft Defender XDR"
+site_url: "https://github.com/microsoft/ignite25-LAB540-microsoft-purview-integration-with-microsoft-defender-xd"
+site_author: Amisha Gupta
 site_description: >-
-  Demo mkdocs for Ignite Repos
+  Repository for Lab540 Microsoft Purview Integration with Microsoft Defender XDR assets and instructions.
 
 # Repository ..................................................
 repo_name: microsoft/Ignite25-Repo-Template
