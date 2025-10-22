@@ -110,8 +110,8 @@ By the end of this session, learners will be able to:
 
 <table>
 <tr>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="Amisha Gupta"
+    <td align="center"><a href="https://github.com/microsoft/ignite25-LAB540-microsoft-purview-integration-with-microsoft-defender-xdr/img/Profile pic.jpg">
+        <img src="https://github.com/microsoft/ignite25-LAB540-microsoft-purview-integration-with-microsoft-defender-xdr/img/Profile pic.jpg" width="100px;" alt="Amisha Gupta"
 "/><br />
         <sub><b>Amisha Gupta
 </b></sub></a><br />
