@@ -110,12 +110,12 @@ By the end of this session, learners will be able to:
 
 <table>
 <tr>
-    <td align="center"><a href="https://github.com/microsoft/ignite25-LAB540-microsoft-purview-integration-with-microsoft-defender-xdr/img/amishagupta.jpg">
-        <img src="https://github.com/microsoft/ignite25-LAB540-microsoft-purview-integration-with-microsoft-defender-xdr/img/amishagupta.jpg" width="100px;" alt="Amisha Gupta"
+    <td align="center"><a href="https://github.com/amisgupta">
+        <img src="https://github.com/amisgupta" width="100px;" alt="Amisha Gupta"
 "/><br />
         <sub><b>Amisha Gupta
 </b></sub></a><br />
-            <a href="https://github.com/microsoft/ignite25-LAB540-microsoft-purview-integration-with-microsoft-defender-xdr/img/amishagupta.jpg" title="talk">📢</a> 
+            <a href="https://github.com/amisgupta" title="talk">📢</a> 
     </td>
     <td align="center"><a href="http://github.com/mikekinsman">
         <img src="https://github.com/mikekinsman.png" width="100px;" alt="Edward Wu
