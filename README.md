@@ -51,12 +51,12 @@ By the end of this session, learners will be able to:
 </b></sub></a><br />
             <a href="https://github.com/amisgupta.png" title="talk">📢</a> 
     </td>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="Edward Wu
+    <td align="center"><a href="https://github.com/ridemo">
+        <img src="https://github.com/ridemo.png" width="100px;" alt="Edward Wu
 "/><br />
         <sub><b>Edward Wu
 </b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
+            <a href="https://github.com/ridemo" title="talk">📢</a> 
     </td>
 </tr></table>
 
