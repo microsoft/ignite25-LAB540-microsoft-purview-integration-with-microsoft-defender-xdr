@@ -49,7 +49,7 @@ _In this task, you’ll learn more about investigating incidents in Microsoft De
 #### Task 4 – Run KQL queries to hunt for threats in Advanced Hunting
 _In this task, you’ll learn how to hunt for threats using Advanced Hunting._
 1. On the left navigation bar, click on “Hunting” and then select “Advanced Hunting”.
-2. On the left pane, scroll down to the “Data security” section to discover the DataSecurityBehaviors and DataSecurityEvents tables. Expand the two tables to learn what columns are offered under each.
+2. On the left pane, scroll down to the “Data security” section to discover the `DataSecurityBehaviors` and `DataSecurityEvents` tables. Expand the two tables to learn what columns are offered under each.
 3. Let’s try a simple query:
   <br> ```DataSecurityBehaviors | take 5```
   <br> This query shows 5 rows from the DataSecurityBehaviors table.
@@ -59,7 +59,7 @@ _In this task, you’ll learn how to hunt for threats using Advanced Hunting._
 #### Task 5 – Pull insider risk alert data through Microsoft Graph API
 
 _In this task, you’ll learn how to use Microsoft Graph to pull Insider Risk Management Alerts programmatically. We will use Microsoft Graph Explorer, which is an easy‑to‑use interface to make API calls._
-1. Open a new tab in the browser and go to [https://developer.microsoft.com/en‑us/graph/graph‑explorer]
+1. Open a new tab in the browser and go to https://developer.microsoft.com/en‑us/graph/graph‑explorer.
 2. Click on the profile button near the top‑right corner to log‑in to Graph Explorer. This could be near the “Run query” button.
 3. When a pop‑up window opens, sign in using the account displayed.
 4. Run the following query in the query bar:
