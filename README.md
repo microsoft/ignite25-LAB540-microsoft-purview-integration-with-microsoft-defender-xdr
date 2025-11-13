@@ -34,6 +34,7 @@ By the end of this session, learners will be able to:
 |:-------------------|:----------------------------------|:-------------------|
 | Ignite 2025 Next Steps | [https://aka.ms/Ignite25-Next-Steps](https://aka.ms/Ignite25-Next-Steps?ocid=ignite25_nextsteps_cnl) | Links to all repos for AI Tour 26 Sessions |
 | Learn at Ignite | [https://aka.ms/LearnAtIgnite](https://aka.ms/LearnAtIgnite?ocid=ignite25_nextsteps_github_cnl) | Continue learning on Microsoft Learn |
+| Lab Instructions | [Lab 540 Instructions](https://github.com/microsoft/ignite25-LAB540-microsoft-purview-integration-with-microsoft-defender-xdr/blob/main/LabInstructions.md)| Step-by-step instructions for Lab 540|
 
 ## Content Owners
 
