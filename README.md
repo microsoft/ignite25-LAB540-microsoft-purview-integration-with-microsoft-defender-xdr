@@ -23,10 +23,10 @@ By the end of this session, learners will be able to:
 
 ### 💻 Technologies Used
 
-1. Microsoft Purview Insider Risk Management
-2. Microsoft Purview Data Security Investigations
-3. Microsoft Defender XDR
-4. Microsoft Graph APIs
+1. [Microsoft Purview Insider Risk Management](https://learn.microsoft.com/en-us/purview/insider-risk-management-settings-share-data#in-microsoft-defender-xdr)
+2. [Microsoft Purview Data Security Investigations](https://learn.microsoft.com/en-us/purview/data-security-investigations)
+3. [Microsoft Defender XDR](https://learn.microsoft.com/en-us/defender-xdr/irm-investigate-alerts-defender)
+4. [Microsoft Graph APIs](https://learn.microsoft.com/en-us/graph/security-integration)
 
 ### 📚 Resources and Next Steps
 
