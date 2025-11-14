@@ -1,6 +1,6 @@
-# Lab: Microsoft Purview Integration with Microsoft Defender XDR
+# Lab 540: Microsoft Purview Integration with Microsoft Defender XDR
 
-## Exercise 1 – Investigate insider risk alerts and incidents in Microsoft Defender XDR
+## Exercise - Investigate insider risk alerts and incidents in Microsoft Defender XDR and learn about the new Data Security Investigation solution
 
 You are Joni Sherman, the Insider Risk Management Investigator for Corra Enterprises. Your role involves ensuring regulatory compliance and protecting sensitive information within the organization. Recently, Corra Enterprises has noticed unusual exfiltration activities via email that could potentially expose sensitive data to unauthorized recipients. To get the full view of activities conducted by this user detected across several Microsoft Security solutions from a single pane of glass, you want to share insider risk alerts with Microsoft Defender XDR.
 
@@ -10,6 +10,7 @@ You are Joni Sherman, the Insider Risk Management Investigator for Corra Enterpr
 3. Investigate incidents in Microsoft Defender XDR
 4. Run KQL queries to hunt for threats in Advanced Hunting
 5. Pull insider risk alert data through Microsoft Graph API
+6. Run and interpret results of a Data Security Investigation
 
 #### Task 1 – Learn how to share insider risk alerts with Microsoft Defender XDR
 
@@ -31,7 +32,7 @@ _In this task, you’ll investigate an insider risk alert in Microsoft Defender 
 5. Scrolling down, you will see the Insights on the left pane and the Activities under each insight.
 6. Click on any Activity. This should open a panel on the side where you can conduct a deeper investigation into this particular user activity.
    
-<brr> This is how you can view and investigate insider risk alerts in Microsoft Defender XDR. To get a detailed view of this insider risk alert, you can visit the corresponding alert page in the Insider Risk Management solution by clicking on “View alert in Purview” in the “What happened” section.
+This is how you can view and investigate insider risk alerts in Microsoft Defender XDR. To get a detailed view of this insider risk alert, you can visit the corresponding alert page in the Insider Risk Management solution by clicking on “View alert in Purview” in the “What happened” section.
 
 #### Task 3 – Investigate incidents in Microsoft Defender XDR
 
@@ -44,7 +45,7 @@ _In this task, you’ll learn more about investigating incidents in Microsoft De
 5. Here, you can see relevant alerts correlated within this incident.
 6. You can read more about the incident on the right pane under “Incident details”.
 
-<br> This is how you can investigate incidents with more than one alert logically correlated.
+This is how you can investigate incidents with more than one alert logically correlated.
 
 #### Task 4 – Run KQL queries to hunt for threats in Advanced Hunting
 _In this task, you’ll learn how to hunt for threats using Advanced Hunting._
@@ -53,8 +54,6 @@ _In this task, you’ll learn how to hunt for threats using Advanced Hunting._
 3. Let’s try a simple query:
   <br> ```DataSecurityBehaviors | take 5```
   <br> This query shows 5 rows from the DataSecurityBehaviors table.
-5. Here are some other queries for you to try:
-  <br> `[INSERT A QUERY]`
 
 #### Task 5 – Pull insider risk alert data through Microsoft Graph API
 
@@ -68,13 +67,19 @@ _In this task, you’ll learn how to use Microsoft Graph to pull Insider Risk Ma
 6. Next, we will run an Advanced Hunting query programmatically. Click on the dropdown next to “GET” and choose “POST” from the dropdown. In the query bar, put the following query:
   <br> `https://graph.microsoft.com/v1.0/security/runHuntingQuery`
 7. We will try the same query as we did on the Advanced Hunting page in Defender XDR:
- <br> `[INSERT A QUERY]`
+ <br> `{"Query": "DataSecurityBehaviors| where ServiceSource contains 'Microsoft Insider risk management'"}`
 
-<br> This is how you can pull insider risk alert data programmatically into a SIEM or a SOAR of your choice, such as Cribl or ServiceNow Security Operations.
+This is how you can pull insider risk alert data programmatically into a SIEM or a SOAR of your choice, such as Cribl or ServiceNow Security Operations.
 
-## Exercise 2 –  Run and interpret the results of a Data Security Investigation
+#### Task 6 - Run and interpret results of a Data Security Investigation
 
-You are Joni Sherman, the Insider Risk Management Investigator for Corra Enterprises. Your role involves ensuring regulatory compliance and protecting sensitive information within the organization. Recently, Corra Enterprises has noticed unusual exfiltration activities via email that could potentially expose sensitive data to unauthorized recipients. To get the full view of activities conducted by this user detected across several Microsoft Security solutions from a single pane of glass, you want to share insider risk alerts with Microsoft Defender XDR.
+In this task, you'll learn more about the Data Security Investigation solution to proactively identify the risks associated with your data assets.
 
-### Tasks
-1. [insert instructions]
+1. Go to the Microsoft Defender XDR portal at +++security.microsoft.com+++
+2. On the left pane, click on "Investigation & response" and **Incidents & alerts** then click on **Incidents**. On the Incidents page, Find and click on an incident named **Exfiltration incident involving multiple users**
+3. From the top of the Defender Incident page, find and click on **A new data security investigation has been created View Investigation in Microsoft Purview**. This will open the investigation on Data Security Investigations on the Purview Portal (purview.microsoft.com).
+4. Under the Analysis tab, and under the Categories section, Expand the Default Category, and expand on the Credentials and Access Information Category. Review the top 10 items for risk and remediation.
+    - [ ] Vector search: using a search phrase related to the investigation, this search is contextual, leveraging the power of AI, where the intent and context of the search will identify results priority.
+    - [ ] Find Examination Results on the main page and review suggested mitigations
+    - [ ] From the main Analysis tab, multi-select items, then click on the Explore Insight icon to leverage the Security Graph to investigate documents and users.
+          ![Screenshot 2025-11-13 140627](https://github.com/user-attachments/assets/e0f16c78-16b2-4b4b-981d-780e89f804e3)
